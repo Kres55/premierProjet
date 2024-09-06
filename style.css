@@ -1,0 +1,10 @@
+td, th{
+    border: 1px solid green;
+    padding: 10px;
+}
+
+/* COMMENTAIRE DANS LE CSS */
+
+/*table { 
+    border-collapse: collapse;
+ }*/
