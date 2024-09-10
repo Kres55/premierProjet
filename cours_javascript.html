@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        // Commentaire en javascript
+        /*
+            commentaire multiligne
+        */
+
+        // les variables
+
+        let chiffre = 4;
+        console.log(chiffre);
+
+        console.log(chiffre +4);
+
+        // le texte en programmation s'appelle une chaine de caractère ou en anglais une string
+        let texte = "Je suis beau !";
+        console.log(texte);
+        texte = "je suis moche";
+        console.log(texte);
+
+        const colere = "Je suis en colère";
+        console.log(colere);
+        //colere = "HAAAAAAAA";
+        //console.log(colere);
+        // Reassigner une valeure constante cause une erreur
+
+        //type de donnée
+
+            // Les nombres
+            
+            let nbr = 4;
+            let virgule = 5.2;
+            let negatif = -27;
+            //le nombre maximal possible en Js est :2 puissance 53 - 1
+
+        //Les chaines de caractère
+
+        let mot = "chienne";
+        let caractere = " de caractere.";
+        // exemple de concatenation
+        // la concatenation est la fusion entre 2 string
+        let phrase = mot + caractere;
+        console.log(phrase);
+
+        // Les bool ou booléen
+
+            let oui = true;
+            let non = false;
+
+        // Les objets ou precisemement les prototypes (js)
+
+            let voiture = {
+                marque: "Lada",
+                porte: 3,
+                etat: false
+            }
+            console.log(voiture);
+            //pour recuperer en particulier une propriété d'un objet
+            console.log(voiture.porte)
+
+            // Tableau
+
+            let panier = ["fraise", "pomme", "banane", 5, true, "AUTRUCHE"];
+            console.log(panier);
+            console.log(panier[2]);
+
+            //Null et Undefined
+
+            //le null est une valeur intermediaire, le temps que la variable change de type
+            let guillaume = null;
+
+            // variable sans type non défini
+            let fabien = undefined;
+
+            //Les conditions
+
+            let color = 6;
+            if( color == 6){
+                console.log('oui il est 6');
+            }else{
+                console.log("non il n'est pas égale a 6");
+            }
+
+            let chien = "Labrador";
+            let chat = "Sphinx";
+
+            //if ( chien == "labrador " && chat == "sphinx") {
+                //on verifie le chien et le chat
+            //}
+
+            //( chien == "labrador " || chat == "sphinx") {
+                //on verifie le chien OU le chat
+            //}
+
+            //j'ai un  chauffe eau de 50 litres, il est a 15 litre actuellement 1. Mettre la valeur en litre dans une variable
+            //2. faire la verification que ma variable soit entre 10 litres et 30
+            //si c'est bon envoyer un message dans le cosole.log pour dire que tout est bon
+
+            let chauffeeau = 15;
+            if( chauffeeau >=10  && chauffeeau <=30 ){
+                console.log("le chauffe eau est entre 10 et 30 litres")
+            }
+
+
+
+
+    </script>
+</body>
+</html>
