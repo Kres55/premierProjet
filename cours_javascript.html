@@ -6,6 +6,8 @@
     <title>JavaScript</title>
 </head>
 <body>
+
+
     <script>
         // Commentaire en javascript
         /*
@@ -105,8 +107,107 @@
 
             let chauffeeau = 15;
             if( chauffeeau >=10  && chauffeeau <=30 ){
-                console.log("le chauffe eau est entre 10 et 30 litres")
+                console.log("le chauffe eau est entre 10 et 30 litres");
             }
+
+            // JS avec des maths
+
+            // additions 
+
+            let addition = "1+1"; // 2
+            let soustraction = 4 - 3; // 1
+            let multiplication = 4 * 3 // 12
+            let division = 8 / 2 // 4
+            let modulo = 9 % 4; // 1
+
+            //puissance
+
+            let puissance = 2**4 // 16
+            let power = Math.pow(2, 4) // 16
+            let rand = Math.random(); // génère aléatoirement un chiffre en 0 et <1
+
+            // genere  un chiffre entre 0 et 99.999 puis l'arrondie pour arriver à 99
+            let cent = Math.floor(Math.random() * 100)
+            // Math.floor(0.448 * 100) 
+            // Math.floor(44.8)
+            // Math.floor arrondie a l'unité en dessous
+            // 44
+
+            // LES BOUCLES
+
+                    //exemple de boucle simple de type for
+
+                    for(i = 0; i < 5001; i++) {
+                        console.log(i*2)
+                    }
+
+                    //que se passe t-il ?
+                    /*
+                        la boucle commence avec un compteur "i" qui commence par 0
+                        la boucle s'arretera quand i aura atteint 5000. 
+                        Avec "i++" la boucle à chaque tour de boucle i augmente de 1
+                        dans le console log i et multiplié par 2, 5000 fois
+                    */
+
+                    for (index = 0; index < panier.length; index++) {
+                        console.log(panier[index])
+                    }
+                    
+
+                    let bagnole = ["Mazda", "Lada", "Audi", "Chrysler", "Volkswagen"]
+                    for (fruit of bagnole) {
+                        console.log(fruit)
+                    }
+
+                    // FONCTIONS
+
+                    function multiplisParDeux(nbr) {
+                        console.log(nbr * 2)
+                    }
+
+                    multiplisParDeux(70)
+                    multiplisParDeux(98)
+                    multiplisParDeux(41.96)
+
+
+                    //concatenation
+
+                    let p = "coucou" + " c'est nous";
+                    console.log(p)
+
+                    let k ="J'ai" + 5 + " chiens";
+                    console.log(k)
+
+                    // A ne pas faire !!!!!!!!!!!!
+                    let u = "10" + 4; //104 , cause des erreurs dans le code
+                    console.log(u)
+
+                    let v = 45
+                    console.log("j'ai" + v + "enfants")
+
+                    //les littéraux 
+
+                    console.log(`j'ai ${v} enfants`);
+
+                // if ecriture ternaire
+
+                    let bb = 23
+
+                    //on verifie que bb est supérieur a 18 , si c'est vrai il fera les instructions apres le ?
+                    // si c'est faux il fera les instructions apres le :
+                    bb > 18 ? console.log("Tu es majeur !") : console.log("On verra ça quand tu sera grand");
+
+
+                    //l'operateur de coalescence des nuls
+
+                    //l'operateur de coalescence des nuls, permet de donner une valeur parmis pplusieurs valeur dans un certain ordre et prendre la 1ere valeur non null ou non undefined
+                    let lo = null
+                    let la = null
+                    let le = 54
+
+                    let lu = lo ?? la ?? le
+                    //lu = 54
+
 
 
 

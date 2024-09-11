@@ -13,7 +13,7 @@ td, th {
  }
 
  label, input {
-    display:block; 
+    display:block;
  
  }
  label {
@@ -27,11 +27,13 @@ td, th {
     display:inline;
     margin-top: 15px;
  }
+ /* Oncible les labels et les inputs dans les li */
 
  li input, li label {
     display: inline;
  }
 
+ 
 
 
 
